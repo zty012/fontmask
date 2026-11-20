@@ -1,0 +1,23 @@
+{
+  "name": "fontmask",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "lucide-solid": "^0.468.0",
+    "opentype.js": "1.3.4",
+    "solid-js": "^1.9.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "vite": "^7.2.0",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}
