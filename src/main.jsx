@@ -6,7 +6,7 @@ import FontWorker from './worker.js?worker';
 import './style.css';
 
 const modes = [{ value: 'identity', label: '替换字体身份' }, { value: 'glyphs', label: '替换字形' }];
-const outputName = (file, result) => `${file.name.replace(/\.(ttf|ttc)$/i, '')}-masked.${result.isCollection ? 'ttc' : 'ttf'}`;
+const outputName = (file, result) => `${file.name.replace(/\.(ttf|ttc)$/i, '')}.${result.isCollection ? 'ttc' : 'ttf'}`;
 const formatSize = (size) => size < 1048576 ? `${Math.max(1, Math.round(size / 1024))} KB` : `${(size / 1048576).toFixed(1)} MB`;
 
 function download(bytes, name) {
